@@ -293,7 +293,7 @@ const realtimeDb = firebase.database();
 const RAW_USERS = [
     { id:1, name:"Артур", role:"creator", displayName:"Артур", avatar:"👑" },
     { id:2, name:"Маша Петрова", role:"user", displayName:"Маша Петрова", avatar:"🌸" },
-    { id:3, name:"Маша Старцева", role:"user", displayName:"Маша Старцева", avatar:"🍒" },
+    { id:3, name:"Маша Старцева", role:"user", displayName:"Маша Старцева", avatar:"М" },
     { id:4, name:"Никифоров Матвей", role:"user", displayName:"Никифоров Матвей", avatar:"⚡" },
     { id:5, name:"Арина Хайдукова", role:"user", displayName:"Арина Хайдукова", avatar:"🎀" },
     { id:6, name:"Городилова Варя", role:"user", displayName:"Городилова Варя", avatar:"🌼" },
@@ -785,7 +785,7 @@ function render() {
         const aLast=aMsgs.length?aMsgs[aMsgs.length-1].text:'Напишите Артуру';
         const aUnread=getUnread(getPrivateChatKey(currentUserId,1),aMsgs);
         if(!sq||'артур'.includes(sq))
-            chatsListHtml+=chatItem('private_1','#ff9f0a','👑','Артур',aLast,aUnread,isOnline(1));
+            chatsListHtml+=chatItem('private_1','#ff9f0a','😎','Артур',aLast,aUnread,isOnline(1));
     }
 
     for(let u of users) {
